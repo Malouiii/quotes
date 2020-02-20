@@ -1,0 +1,58 @@
+@import './mixins';
+@import './variables';
+
+body{
+    background-color: #eee6a1;
+}
+
+h1{
+    @include headline();
+}
+
+h2{
+    @include headline();
+}
+
+.text{
+    margin-bottom: 5px;
+}
+
+.text-title{
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+#delete{
+    @include textColor();
+    background-color: $pink;
+    border-color: $pink;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    &:hover{
+        background-color: darken( $pink, 20% );
+    }
+}
+
+.collection-item{
+    margin-bottom: 20px !important;
+}
+
+label{
+    color: black;
+    font-size: 1.25em;
+}
+
+input{
+    border-bottom: 2px solid white !important;
+}
+
+#submit{
+    @include textColor();
+    margin-top: 20px;
+    margin-bottom: 60px;
+    background-color: $blue;
+    border-color: $blue;
+    &:hover{
+        background-color: darken( $blue, 15% );
+    }
+}

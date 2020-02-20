@@ -1,0 +1,10 @@
+@import './variables';
+
+@mixin headline{
+    color: $blue;
+    margin-bottom: 35px;
+}
+
+@mixin textColor {
+    color: white;
+}
